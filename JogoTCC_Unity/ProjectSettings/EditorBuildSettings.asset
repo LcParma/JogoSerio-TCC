@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Cenas TCC/Menu.unity
+    guid: c19e05cbcc5d159428d813d427a7a1f7
+  - enabled: 1
+    path: Assets/Scenes/Cenas TCC/Jogo.unity
+    guid: bbc83e2e72339a14ea73d8ceb9c4e47a
+  - enabled: 1
+    path: Assets/Scenes/Cenas TCC/JogoFinal.unity
+    guid: c7f2b59ae55aa80499d938830bcde9a4
+  - enabled: 0
+    path: Assets/Scenes/Menu_IC.unity
+    guid: f9dfc80550eabdd41862df6bceb47634
+  - enabled: 0
+    path: Assets/Scenes/Cena_Post1.unity
+    guid: 467493f55794d3d4f9b2c2aaaa00c4e2
+  - enabled: 0
+    path: Assets/Scenes/Cena_Post2.unity
+    guid: 5f5a5b795869c67419fe77a7d1c4c5ca
+  - enabled: 0
+    path: Assets/Scenes/Cena_Post3.unity
+    guid: 528490cea9e9c3548ba4eb9d415f83de
+  m_configObjects: {}
