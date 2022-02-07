@@ -1,19 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine;
 
 public class UsarItem_Inventario : MonoBehaviour
 {
 
-    public Text txt_slot1, txt_slot3;
     public GameObject panel_slots, aparecerItem, pnlErrouEngr, EngCorretaGirando;
     public static bool isEndGame = false; //var que inicia fim do jogo
     private bool isBotaoSlot_EndGame = false; //var que eh habilitada quando esta no collider do fim do jogo
     GameObject obj_clone;
 
     int penalidade = 200, pontAtual = 0;
-    public Text textoPontos;
+    public Text textoPontos, txt_slot1, txt_slot3;
 
     private void Awake()
     {

@@ -5,11 +5,10 @@ using UnityEngine;
 public class MaquinaLigada : MonoBehaviour
 {
     //private bool maquinaOn = false;
-    public static bool btnSelecionado = false;
-
     public static GameObject placaMetal;
 
-    public GameObject disco1, disco2, disco3, disco4, disco5, disco6, pai_discos, pnl_ligMaqPrimeiro, pnl_ColoquePlacaPrim;
+    public GameObject disco1, disco2, disco3, disco4, disco5, disco6, pai_discos;
+    public GameObject pnl_ligMaqPrimeiro, pnl_ColoquePlacaPrim;
 
     //public GameObject personagem;
     public Camera cam_maq;
@@ -21,8 +20,7 @@ public class MaquinaLigada : MonoBehaviour
     private void Awake()
     {
         pnl_ligMaqPrimeiro.SetActive(false);    
-        pnl_ColoquePlacaPrim.SetActive(false);    
-        
+        pnl_ColoquePlacaPrim.SetActive(false);
     }
 
     // Start is called before the first frame update
