@@ -6702,7 +6702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.1000061, y: -116}
+  m_AnchoredPosition: {x: -0.1000061, y: -120}
   m_SizeDelta: {x: 60, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96101655
@@ -42173,10 +42173,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esta figura se assemelha as primeiras medidas para constru\xE7\xF5es das
-    engrenagens. Descubra a solu\xE7\xE3o para encontrar a engrenagem certa...\n\nO
-    tri\xE2ngulo ABC est\xE1 inscrito em um semic\xEDrculo de di\xE2metro AB e centro
-    O. Encontre o raio."
+  m_text: "Esta figura cont\xE9m informa\xE7\xF5es da medida utilizada para construir
+    a engrenagem do motor no segundo andar. Resolva este problema para descobrir
+    o tamanho certo da engrenagem...\n\nO tri\xE2ngulo ABC est\xE1 inscrito em um
+    semic\xEDrculo de di\xE2metro AB e centro O. Encontre o raio."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -70699,7 +70699,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0.000045776367, y: -24.2}
-  m_SizeDelta: {x: 269.9502, y: 278.39038}
+  m_SizeDelta: {x: 269.9502, y: 285}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2086511319
 MonoBehaviour:
