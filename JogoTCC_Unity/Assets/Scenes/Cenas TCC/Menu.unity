@@ -1262,7 +1262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: 17}
+  m_AnchoredPosition: {x: -196, y: 3}
   m_SizeDelta: {x: 100, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187055755
@@ -1337,7 +1337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.4, y: 15}
+  m_AnchoredPosition: {x: -24.4, y: 1}
   m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193491067
@@ -1967,7 +1967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189, y: 15}
+  m_AnchoredPosition: {x: 189, y: 1}
   m_SizeDelta: {x: 100, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588858275
@@ -2277,11 +2277,12 @@ MonoBehaviour:
   m_text: "Use as setas direcionais para movimentar o personagem. Com as setas Cima
     e Baixo voc\xEA movimenta o personagem e com a Esquerda e Direita movimenta a
     c\xE2mera. Ou utilize as teclas W,A,S e D. Pressione Shift para correr e solte
-    para parar e Espa\xE7o para pular.\n\n\n\n\nPara interagir com os objetos use
-    o mouse. Com o bot\xE3o direito voc\xEA segura o objeto e pode andar com ele.
-    Quando clicado com o bot\xE3o esquerdo, objetos espec\xEDficos ir\xE3o para o
-    invent\xE1rio, ent\xE3o basta clicar com o bot\xE3o direito no item do invent\xE1rio
-    para us\xE1-lo."
+    para parar e Espa\xE7o para pular. Use as teclas R, T, F e G para rotacionar
+    o objeto enquanto segura com o bot\xE3o direito.\n\n\n\n\nPara interagir com
+    os objetos use o mouse. Com o bot\xE3o direito voc\xEA segura o objeto e pode
+    andar com ele. Quando clicado com o bot\xE3o esquerdo, objetos espec\xEDficos
+    ir\xE3o para o invent\xE1rio, ent\xE3o basta clicar com o bot\xE3o direito no
+    item do invent\xE1rio para us\xE1-lo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0f40163f7852be41a002a9123debadd, type: 2}
   m_sharedMaterial: {fileID: -6085982078224496447, guid: f0f40163f7852be41a002a9123debadd, type: 2}
