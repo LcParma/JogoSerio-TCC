@@ -9,6 +9,8 @@ public class DragObj : MonoBehaviour
     private int vel_ro = 25;
     public bool segurando_OnOff = true;
 
+    public float isCloseObj = 20f;
+
 
     //private void Awake()
     //{
