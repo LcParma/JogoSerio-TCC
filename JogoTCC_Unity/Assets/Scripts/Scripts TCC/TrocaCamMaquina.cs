@@ -8,6 +8,9 @@ public class TrocaCamMaquina : MonoBehaviour
     public Camera camSecundaria;
     public GameObject personagem, pnl_sairCamSec, seg1, seg2, seg3, seg4, seg5, seg6;
     public Collider colisor, colSegHolder, col_ligandoFios;
+
+    public static bool isCamMaquinaInvent = false;
+
     AudioListener audioPrim;
     //public AudioListener audioScriptHolder;
 
@@ -18,6 +21,8 @@ public class TrocaCamMaquina : MonoBehaviour
         camPrimaria = personagem.GetComponentInChildren<Camera>();
         //audioPrim = personagem.GetComponentInChildren<AudioListener>();
         camSecundaria.GetComponent<Camera>().enabled = false;
+
+        isCamMaquinaInvent = false;
         //camSecundaria.GetComponent<AudioListener>().enabled = false;
     }
     private void OnMouseDown()
@@ -27,13 +32,14 @@ public class TrocaCamMaquina : MonoBehaviour
     }
     void AlternarCam()
     {
+        isCamMaquinaInvent = true;
         pnl_sairCamSec.transform.GetChild(1).gameObject.SetActive(true);
         colisor.enabled = false;
         camPrimaria.enabled = false;
         camSecundaria.GetComponent<Camera>().enabled = true;
         personagem.SetActive(false);
         //camSecundaria.GetComponent<AudioListener>().enabled = true;
-        colSegHolder.enabled = false;
+        //colSegHolder.enabled = false;
         col_ligandoFios.enabled = true;
         seg1.GetComponent<DragObj>().segurando_OnOff = true;
         seg2.GetComponent<DragObj>().segurando_OnOff = true;
@@ -44,13 +50,14 @@ public class TrocaCamMaquina : MonoBehaviour
     }
     public void VoltarCamPri()
     {
+        isCamMaquinaInvent = false;
         pnl_sairCamSec.transform.GetChild(1).gameObject.SetActive(false);
         colisor.enabled = true;
         camPrimaria.enabled = true;
         camSecundaria.GetComponent<Camera>().enabled = false;
         personagem.SetActive(true);
         //camSecundaria.GetComponent<AudioListener>().enabled = false;
-        colSegHolder.enabled=true;
+        //colSegHolder.enabled=true;
         col_ligandoFios.enabled = false;
         //audioScriptHolder.enabled = false;
 

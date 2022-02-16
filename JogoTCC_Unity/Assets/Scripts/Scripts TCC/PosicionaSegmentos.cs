@@ -12,7 +12,7 @@ public class PosicionaSegmentos : MonoBehaviour
         if (other.transform.tag == "Segmento")
         {
 
-            other.gameObject.GetComponent<DragObj>().segurando_OnOff = false;
+            //other.gameObject.GetComponent<DragObj>().segurando_OnOff = false;
             if(other.transform.name == "seg_maior2A")
             {
                 other.transform.position = localSeg_pos.transform.GetChild(0).position;

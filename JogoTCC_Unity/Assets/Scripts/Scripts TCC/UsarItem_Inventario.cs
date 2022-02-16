@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class UsarItem_Inventario : MonoBehaviour
 {
 
-    public GameObject panel_slots, aparecerItem, pnlErrouEngr, EngCorretaGirando;
+    public GameObject panel_slots, aparecerItem, aparecerItem_Maquina, pnlErrouEngr, EngCorretaGirando;
     public static bool isEndGame = false; //var que inicia fim do jogo
     private bool isBotaoSlot_EndGame = false; //var que eh habilitada quando esta no collider do fim do jogo
     GameObject obj_clone;
@@ -78,8 +78,15 @@ public class UsarItem_Inventario : MonoBehaviour
     public void UsarItemSlot2() // Slote do Plugue da tomada
     {
 
-            obj_clone = ItemInventario.Itens_desafio;
+        obj_clone = ItemInventario.Itens_desafio;
+        if(TrocaCamMaquina.isCamMaquinaInvent == true)
+        {
+            obj_clone.transform.position = aparecerItem_Maquina.transform.position;
+        }
+        else
+        {
             obj_clone.transform.position = aparecerItem.transform.position;
+        }
             obj_clone.SetActive(true);
             Debug.Log(ItemInventario.fila_itens.Count);
             panel_slots.transform.GetChild(1).gameObject.SetActive(false);
@@ -92,7 +99,14 @@ public class UsarItem_Inventario : MonoBehaviour
         if (ItemInventario.fila_itens.Count > 0)
         {
             obj_clone = (GameObject)ItemInventario.fila_itens.Dequeue();
-            obj_clone.transform.position = aparecerItem.transform.position;
+            if (TrocaCamMaquina.isCamMaquinaInvent == true)
+            {
+                obj_clone.transform.position = aparecerItem_Maquina.transform.position;
+            }
+            else
+            {
+                obj_clone.transform.position = aparecerItem.transform.position;
+            }
             obj_clone.SetActive(true);
             txt_slot3.text = ItemInventario.fila_itens.Count.ToString();
         }
