@@ -5,7 +5,7 @@ using UnityEngine;
 public class GiraSerra : MonoBehaviour
 {
 
-    [SerializeField] private GameObject serra;
+    public GameObject serra;
     public float velocidade = 10;
 
     void Update()

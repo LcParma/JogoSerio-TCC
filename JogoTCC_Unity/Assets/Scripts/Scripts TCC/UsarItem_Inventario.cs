@@ -4,12 +4,12 @@ using UnityEngine.UI;
 public class UsarItem_Inventario : MonoBehaviour
 {
 
-    public GameObject panel_slots, aparecerItem, aparecerItem_Maquina, pnlErrouEngr, EngCorretaGirando;
+    public GameObject panel_slots, aparecerItem, aparecerItem_Maquina_pai, pnlErrouEngr, EngCorretaGirando;
     public static bool isEndGame = false; //var que inicia fim do jogo
     private bool isBotaoSlot_EndGame = false; //var que eh habilitada quando esta no collider do fim do jogo
     GameObject obj_clone;
 
-    int penalidade = 200, pontAtual = 0;
+    int penalidade = 200, pontAtual = 0, qtdPos=0;
     public Text textoPontos, txt_slot1, txt_slot3;
 
     private void Awake()
@@ -23,6 +23,7 @@ public class UsarItem_Inventario : MonoBehaviour
         isEndGame = false;
         isBotaoSlot_EndGame = false;
         EngCorretaGirando.SetActive(false);
+        qtdPos = 0;
     }
 
     private void Update()
@@ -81,7 +82,7 @@ public class UsarItem_Inventario : MonoBehaviour
         obj_clone = ItemInventario.Itens_desafio;
         if(TrocaCamMaquina.isCamMaquinaInvent == true)
         {
-            obj_clone.transform.position = aparecerItem_Maquina.transform.position;
+            obj_clone.transform.position = aparecerItem_Maquina_pai.transform.position;
         }
         else
         {
@@ -101,7 +102,17 @@ public class UsarItem_Inventario : MonoBehaviour
             obj_clone = (GameObject)ItemInventario.fila_itens.Dequeue();
             if (TrocaCamMaquina.isCamMaquinaInvent == true)
             {
-                obj_clone.transform.position = aparecerItem_Maquina.transform.position;
+                if(qtdPos <= 5)
+                {
+                    //obj_clone.transform.position = aparecerItem_Maquina.transform.position;
+                    obj_clone.transform.position = aparecerItem_Maquina_pai.transform.GetChild(qtdPos).transform.position;
+                    qtdPos++;
+
+                }
+                else
+                {
+                    qtdPos = 0;
+                }
             }
             else
             {
